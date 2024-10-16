@@ -1,0 +1,247 @@
+{
+  "config": {
+        "actions": [
+            {
+                "id": "addtocluster",
+                "label": "Add selection to cluster",
+                "type": "selection",
+                "url": "https://dev2.sofi-platform.dk/cluster"
+            },
+            {
+                "id": "createnewworkspace",
+                "label": "Create new workspace from selection",
+                "type": "selection",
+                "url": "https://dev2.sofi-platform.dk/workspaces/new"
+            }
+        ]
+    },
+  "charts": {},
+  "datasets": {
+    "dataset-1": {
+      "id": "dataset-1",
+      "file": "c7jx",
+      "idFieldName": "code"
+    }
+  },
+  "files": {
+    "c7jx": {
+      "id": "c7jx",
+      "type": "data",
+      "name": "",
+      "format": "text/csv",
+      "url": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQt0l5CF2hyN3ajkVS_Lx5zPwi0eZ1bD675FPKyt2tKoYPkNynfSLYw6WOi_j0MQTgSsazlfrxOrGtP/pub?gid=0&single=true&output=csv"
+    }
+  },
+  "filters": {
+    "dataFilters": [],
+    "chartFilters": [],
+    "searchOperator": "includes",
+    "searchValue": "",
+    "selection": [
+      "AC",
+      "AD"
+    ],
+    "selectionBreakdownField": null
+  },
+  "matrices": {},
+  "maps": {
+    "map-1": {
+      "controls": false,
+      "dataType": "geographic-coordinates",
+      "grouped": true,
+      "groupMarkersByRegion": false,
+      "lasso": false,
+      "markersOpacity": 100,
+      "maxNodeSize": 64,
+      "minNodeSize": 4,
+      "nodeSize": 14,
+      "path": null,
+      "regionsColourField": null,
+      "regionsColourMethod": "entries",
+      "regionsColourOpacity": 100,
+      "regionsColourPalette": "ColorBrewer YlOrBr-2",
+      "scaleMarkers": false,
+      "scaleType": "logarithmic",
+      "showMarkers": true,
+      "showRegionOutlines": true,
+      "showRegions": true,
+      "style": "",
+      "tileLayerDialog": false,
+      "tileLayerOpts": null,
+      "tileLayerUrl": null,
+      "trackViewport": false,
+      "type": "mapbox",
+      "title": "Map",
+      "coordinateUnit": "decimal-degrees",
+      "latitudeField": "latitude",
+      "longitudeField": "longitude"
+    }
+  },
+  "meta": {
+    "name": "Unnamed Project",
+    "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPAAAAB1CAYAAABwKGz5AAAAAXNSR0IArs4c6QAAEstJREFUeF7tXQtUVeUSHkBRlOsDFcxMUQlFJQVNSxRbqYhpKRGZaXRVtFRupnbTWreWLR89blo+K6+WbwnydU0BJVMUEsH3GwHxDeYLBBR8cNf83kNwzuGcvffZ+5z97z3/Wq1lMP/8M9/s4X/OjFNJSVG5e9gowLZj9kfwvN/T7N+Obg8fPoTy8nKoUaOGKFGWLl0GUVGjRfXRM/HChQshOjqaQVBSchdWr14NY8eO0TMkXOju5laXyemEDnwk9zIs/G8i/LwrBQo3LFONAr/++isMGjTIRJ7fftsJvXr1BFdXV9XImpCQAKGhoaqRR25Bzpw5A23btpWbLfGTiEAVB5bIg4tuR44cgU6dOnEhqz2EXLLkP7qdYe/fvw81a9a0B8yKj6EbB64OyWXLfoTRox9vHcy1/fvT4fLly3Dz5k2LdIpbSuEBfvllPbz2WrjCoxB7uRHgzoEXLlwE0dETBOFQUlICderUEURrjgj7l5aWws8/x8K7774jmY+jO/79mx/hys0C2D5jEhMFZ6CsrCzw8/MzKxr+sfLw8ID8/Hzw8vJytPg0vkUEnNlv2R6YV6TWrYuBYcPekF383buT4datW/Dyy4Pg3r17ULfu4wMD3lpCQiKEhvaHl6bPg23TJwoSf968+eDj4wMDB77E6FNTU6FHjx6C+t69exfc3NwE0RKRbQjgDLxu3Tq+HdgcBPgR3b59G5544gnRCG3Z8ivrg46LbdOmTfDss8/Ck08+KZqXWjo8ePAAsvKuQ7vmTQWJVFhYCPXq1RNEa0xkiwPjH8ratWtLGlePndCB4+LitOfA1ox59uxZePrpx1dlly5dgubNm1d0SUvbD66uNdlSs1u3btZY0e/NILB3bwr07BkkCpuDBw9CYGCg2T54lejk5CSKnx6IudoD451wZuZZ8PNrZ2KbzMxM8PX1rfJzdMzs7Bzo3TtYkC0fPXoEzs7OUFRUBElJSZCengGzZs0U1JeIqiKwfv16CA8Ph5ycHGjdurVkeA4fPgKdO6vr9qCsrEw1V5dcOXBKSgqcP38B3nxzmKAPIi8PD2E8Rf3lPnToEPj7+0NU1Bjo27cPjBgxQtBYWiSKjY2F119/3aJqGRkZ0LVrV8nqHzp0GAICOlfb33h1JHkgjXbkwoETE7dDSEg/UY5obK8///wTmjRpAhcuXIAWLVpU+XViYiL079+f/ezAgYPg7d0SGjVqxK3J1TRDcAuiRMHt/d6ACwcWiuW1a3+Cp2eTKuR3794DN7e/DkWysrLBx6dNBY25S/1du3bBCy+8IHRY3dLhYZ/hoI83EPB6sFatWryJbSIvOjA7H+DxGknowUZ6ejo7RTZuxiet1h51cG9tIwX27dsHzz33nCS1DA6wevUaGDFiOOOxffsOtlKiZj8E0IELCgr4dGA8bHJ3d7cfWjSSYATOncuFVq28TejPnz8PLVu2FMyHCC0joKkltLGq5hzccEe5fTvuq0NYl7S0NOjevbvgb+XatWvg6ekpmF6rhPPnL4D33vuHrOpVvt6TlbFGmWnagY1ttnHjJggLG6JRUz5W6/btAmjQoL5ddMQHBAEBgWymdXFxkXXM4uJiiImJgdGjKSTUErDowPHx8XwuoWX9YoiZqhDQUsSQksDqaga2BCQui+vXr8/VyaTQQyMMxhg61PJ9rpIfmT15o64REa+xBzliGh7KPXz4COrU4esNNzlwJSsnJ++B4OBeYuxOtAIRsNcJf1zcLzBkyGDR8b7fffcdNGvWDAYPHixQI3WQkQObsQNeT+HVkx7fQe/YkQT9+vVV5OtMSUmFoCBhEU2KCKBBpppz4IcPH4CLi7j8WcZ2xRDChg0batDc9lUJD7kiIiKqDGqPva2czy9//PEneOONoTbFlSuJuuYcGMHCLBrdupk+3JAKpCHAXWp/6mc/BIwf54gJprhx4wb7w228f8ZQTLFJFe2lsSYd2F7gqWkcnpanFy9ehKeeekoyfNnZ2dCmzV/PYSUzMtNxw4YN8Oqrr8rJUlFesjjwyZMnoX379ooKai/meP9onHnj2LHj4O/f0V4i0DhWELD1HfOOHTugXz9tPPmUxYG18sUVFt6BevX+Brhk2rYtHl555WUT1TBjxIYNGwWHNDoKm1WrVsNbb1UfCqnkYZWjdNbjuOTANlg9PDyCOXJ4uLJLLkozY4ORHNwVM5oqmYpJ1w6M2R4w9rdBgwaSzVz5TbVkJhY6Wtrv8XC4hqe4o0aNVAIaSTztdR8tSTgJnXTpwHIHvC9e/B2MHz9OAvzSu8TGxkFgYADLHKmWdvr0GWjXjqo2VLaH0pjo0oERYMyvZXiAL/SaAONnMSGAIf7VkY6zefNm8PNrD76+1dew2rcvDVq1asXSCsnVrl+/Do0bN7bIDh/XDxgwQK4hueaD2WT6938c9aZE496Bv/jiC5g2bZoS2JjwnDLlnzBnzr+r/NyW9Ku2CP3TT8vB3b2uyUMJW3jK1bfyH0e5eBIf8whw78CoVlnZfZYG1hHN2mmvI2QyHtPcPloJzPCVFWaHsDZDqwETrcigCQfWijGk6CH0hPrEiRPQoUOHiiEq57MSGtVk6Lxz50548cUXTcQVmxhBir5q7JOXlwdHjx4TlE7IkFxRrB7VZTKR5MBYO3b48OE2ZYkUq4Ba6G2tt6SkHoaEBfgkUExWzereJ/P0uktJXIXwFlocTu7thSQHxr8GWPRK6yUwTp48BUVFd6xGJeGhDdYEpsoBQj51x9IsWrQYJkwYX60Qa9asZTm7xFaVcJRWkhzYUcLae9z9+/dbdd7KMmG+LXz0jrVnpZQWsbd+NJ4pApgXvEOH9txMTuTAOv+KpSbok3spaMkMc+d+A5MnPy6NKkcTu+eXY0yleJADK4UsB3yNn/kdP34COnb866BLqAp4kHbq1CkICAgQ2oXoZEKAHNgMkEpfvstkO8lsjKNxrly5wtLJSG1YFG7Lli3cpaORqq+a+gly4K1bt8LAgQPVJDfJ4iAE7ty5w16jWSpI5iDRdDmsIAfWJTKkdLUIWKrjKwQ2OuATgpIwGnJgYTgRVTUICHkbbdxVTF4s3g+c4uMTYMCAUMW+H3JgxaBVlnHIJ9/AoshBMC0uCdZ/bN9IKINmBw4cgMDAQEXvv/GUHEt2aiWDhtxfBTmwBUSvX78BjRurs05w5uV88H3SS+7vQXX8hFagVJ3gdhLIogMnJydDcHCwnUShYcQigLPw9hny3Y+KHZ9n+vXrNwBefw0f/qYoNVJSUiAoKEhUHyWJaQZWEl1OeScl/QZ9+/aRLP3atWuhT58+7LmtoxvO4GvWYA3jqvnB8E07FviWuyibvfWt4sD5+flVQOe5Aru9gaTxqiJQVFQMZWWl4OHh4VBocJbF71qrNYmrODD+VUpPz4DevYOrZKxwqAU4HlzMaSsPahqnIhKTNJ0H/dQmY07OOWjdupVFsWgJLdFq+PIIU/GEhYVJ5KDPbrm5ueDt7a1P5WXWOibmZxg5chTj6lRSUlQuM39Ns8PZFcMH1Vpyw1Hg06mxfZFXbAb+448/4Pnnn7evNjSaqhBQsgSKqhR1oDBWHZiWPA60jgqHNlSvsEU0XL1gKt6JE9+zhY2m+wp9gWbiwIcOHaKwME1/GuKV27NnD/TqZb3w+cqVKyEyMlLQAGLT/ghiqkMiqzOwDjEhlQkBbhAgB5bJVFqq0CgTJLphIzWriRwAqc6Bz507x6oJUFMvAlIikNSrDd+Sqc6B+YZTH9LjIdT+/ekQFNRDHwqrWEtyYBUbh0QjBLCEzsiRf68WCHJg+kYsImBcSeD27ds2lWMluIUjgC/9Ll68aHFLSQ4sHE/dUQot26I7YFSkMDmwjMZQuti3jKISK40gQA6sEUOSGvpEgBxYgN2LiorA3d1dACWREAL2RYAcWCDeWovtFag2kakcgQoH7tKlS3lqagqrc4oZDDCIYdy4d6G09J7KVSDxzp+/AC1btiAgdIhAhQOHhoaWDxky2ASCyMi3dAiLMJXVXCtYmAZExTsCFQ6cmJhQ3r37c+Di4sQyTRhq3bq6ulJ6Hd6tTPJrFoEKBz5y5HB5x47+sHnzRnBzcwNnZxeoU8cNvLyawpkzp1mWQWqEACHgeAQqP6apcODc3FxKqeN425AEhIAoBAzZNp3Ky8vLXUKHgndTTyi7/wCaNWoIGZnZcHXlAvD09BTFlIgJAUJAfgSmT5/OtrMzZsyAxYsXg4+PD4SEhLCBmAPLPyRxJAQIAbkQaN++PWOVlJTEnPfrr7+G8ePHkwPLBTDxIQTshYBx9k82A1MtJHvBT+MQAvIiwBwYy0V26dJFEmeczrt37w4jR46ErKwsizwwSdqSJUsAC0Vh6cgxY8ZATEyM2T6YqqZhw4aAJ2/Lli1jBalOnDgBv//+u1n6q1evsvGbN29uNbPHzZs3Yfny5TBnzhy4fPmyRZnFpMxB/Ro1agSGJY81QDt16sRwoEYISEWA9sBSkaN+hIAKECAHVoERSARCQCoCTvdKy+gUWip6duhXy7WmHUahIXhFgDnw3j3J0LOXtILeUkLuZs6YAeHh4eDs4gwHDxyEYW9aLra8YMF8CAgIhMSEBHh96FDw9/c3wTs6egJ8PvtzyMrOBp82beDo0aMQ1LMnYCbF3HPnICMjA94dN447O5EDc2cyuwpMM7Bd4RY/GDmweMz01IMcWOXWJgdWuYEcLB5z4PW/xEH4axGKizJ+/DhW3ArbrJkz4cOpUyEqajSsWLHSZOy9e/cC1mtyc6sNnTt3hoT4BPjXJ58oLqPaBiAHVptF1CUPzcDqsoeJNOTAKjeQg8Vzun//AZ1CO9gIloavUcNFxdKRaI5GgN0DHzt2zOzJrqOFo/EJAULAMgLMgW0pLLZixQp4++23BeOMzxgx6//gwYNh48aNLGQRnx+aa5MmTYLg4GBGi4+4MzMzwc/Pzyzttm3bIDQ0FJydndnvcf+MT0SjoqLY///www/wzjvvCJaTCAkBHhCgl1g8WIlkJASqQYAcmD4NQoBjBGxeQhvHJ1rCAiORxo4dKwiunJwctrSuX7++IHqMQsJlM0Y4NWnSBN5//31YsGABfP/994L6ExEhwCMCNAPzaDWSmRD4PwLkwPQpEAIcI2DzElqM7qWlpVCrVi3WBYPzO3ToAMXFxVC3bt1q2WAgf3Z2Nnh7e7Pgfsxb3axZM8HD3rlzBx49eiR4KS6YMRESAipAgDlwQUGB5A8co30aN24sSBV0YIxewr2twYEvXbrEsmhU19D5Tp8+De3atYOzZ8+y3NUtWlQtJ4KVEtBRa9euDZs2bYKBAweyPxRYmAzHQx6Y1c/Dw0OQnERECPCCgFPx3Xv0EkvF1qpT+/GKhRohYA4B2gPTd0EIcIyAzXvgtLQ0ltROSDt+/Dh07NiRvarCveypU6dYAjpc+ho3pEtNTWXVEjGAf9GiRRAdHc1+1qNHDxP6qVOnwpdffsleXHXr1g0CAgKEiEQ0hADXCNAMzLX5SHi9I0AOrPcvgPTnGgGbl9BitMdyEFjbBYMZ8ES4rKyMnSqba7jMnjJlCntRFRsbC4MGDWIn0dU1wxJajDxESwjwjgDNwLxbkOTXNQLkwLo2PynPOwLMgQ2PKnhXhuQnBPSGgM3FzebOnQthYWFW6xEhsNOmTYOmTZuyBAB4LTR58mT46quvAOufmmvx8fFsv4zRRbt374bPPvus4ilmZXq8jsJaRx9//DHs2rULMGkA1mqiRghoHQFaQmvdwqSfphEgB9a0eUk5rSNg8zUSBgtgQANGC1lrhpdYSDdz5kwWjYRL42+//dZsVwxAwP35zp07IS8vD7p27Qq+vr7wzDPPmNBjQAa2pUuXsqsnDGDIz89nAQ2zZs1i4xkioazJSb8nBHhBgGZgXixFchICZhAgB6bPghDgGAGbl9BidU9OTmZLYgw2aNu2LaxcuRJmz55twgar3X/wwQcwatQoaN26NWzduhU++ugj8PLyEjsk0RMCmkVAUzPw4cOHWR0laoSAXhBwevDgIQX0q9jaLi6PE9VTIwTMIUClVei7IAQ4RsDmPTCWVsEA+upKnhhjg9c7+HIK97Qffvghi0hycXFh/xk3zKGFUUlXr15l+bBCQkLMQo10n376KQvoxyst3FPjv2vWrMmxaUh0QsA6ApraA1tXlygIAW0hQA6sLXuSNjpDwCn/xq3y4oJbULd+Q/D0aCBafTGlVZD5vHnz2IuoyMhIWLVqFQwbNgzq1atX7bgYzICvvTCVLC6z4+LiICIiwoR+4sSJEB4eDhgAgVUNMdWtoVKhaKWoAyHACQLMgQ2ySnFgTvQkMQkBTSJADqxJs5JSekHA5iW0FKAwQAEbBkBg2lgMajDXMJgBqxTiSyxcDl+5coWdLGNRcCGtsLDQ4vJcCA+iIQTUjMD/AKgmsdu+uGHPAAAAAElFTkSuQmCC",
+    "timestamp": "2024-10-16T08:38:01.284Z",
+    "description": "",
+    "createdAt": "2024-10-16T08:35:45.972Z",
+    "updatedAt": "2024-10-16T08:35:45.972Z"
+  },
+  "networks": {},
+  "notes": {},
+  "panes": {
+    "model": {
+      "global": {
+        "splitterSize": 2,
+        "tabEnableClose": false,
+        "tabSetHeaderHeight": 1,
+        "tabSetTabStripHeight": 1,
+        "tabSetMinWidth": 160,
+        "tabSetMinHeight": 160,
+        "borderMinSize": 160,
+        "borderBarSize": 20,
+        "borderEnableDrop": false
+      },
+      "borders": [
+        {
+          "type": "border",
+          "size": 240,
+          "location": "right",
+          "children": [
+            {
+              "type": "tab",
+              "id": "--mr-legend-pane",
+              "name": "Legend",
+              "component": "Legend",
+              "enableClose": false,
+              "enableDrag": false
+            },
+            {
+              "type": "tab",
+              "id": "--mr-selection-pane",
+              "name": "Selection",
+              "component": "Selection",
+              "enableClose": false,
+              "enableDrag": false
+            },
+            {
+              "type": "tab",
+              "id": "--mr-history-pane",
+              "name": "History",
+              "component": "History",
+              "enableClose": false,
+              "enableDrag": false
+            },
+            {
+              "type": "tab",
+              "id": "--mr-views-pane",
+              "name": "Views",
+              "component": "Views",
+              "enableClose": false,
+              "enableDrag": false
+            }
+          ]
+        }
+      ],
+      "layout": {
+        "type": "row",
+        "id": "#3ac261a8-ad68-4890-89ba-28ca41367185",
+        "children": [
+          {
+            "type": "row",
+            "id": "#c26f6ce4-43c4-4b61-a3fc-3b75c647a421",
+            "children": [
+              {
+                "type": "tabset",
+                "id": "#8cfbe380-a794-4f78-8ad8-4779f002ea76",
+                "weight": 64,
+                "children": [
+                  {
+                    "type": "tab",
+                    "id": "map-1",
+                    "name": "Map",
+                    "component": "Map"
+                  }
+                ]
+              },
+              {
+                "type": "tabset",
+                "id": "#60799421-0f6b-4e62-ba60-6e479529dd03",
+                "weight": 48,
+                "children": [
+                  {
+                    "type": "tab",
+                    "id": "table-1",
+                    "name": "Metadata",
+                    "component": "Table"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "slicers": {},
+  "styles": {
+    "coloursField": null,
+    "colourPalettes": [],
+    "defaultColour": "transparent",
+    "defaultShape": "circle",
+    "colourSettings": {},
+    "labelsField": null,
+    "legendDirection": "row",
+    "shapesField": null,
+    "shapePalettes": []
+  },
+  "tables": {
+    "table-1": {
+      "displayMode": "cosy",
+      "hideUnselected": false,
+      "title": "Metadata",
+      "paneId": "table-1",
+      "columns": [
+        {
+          "field": "5",
+          "fixed": false
+        },
+        {
+          "field": "code",
+          "fixed": false
+        },
+        {
+          "field": "latitude",
+          "fixed": false
+        },
+        {
+          "field": "longitude",
+          "fixed": false
+        },
+        {
+          "field": "name",
+          "fixed": false
+        },
+        {
+          "field": "type",
+          "fixed": false
+        },
+        {
+          "field": ".1",
+          "fixed": false
+        },
+        {
+          "field": ".2",
+          "fixed": false
+        },
+        {
+          "field": ".3",
+          "fixed": false
+        }
+      ],
+      "file": "c7jx"
+    }
+  },
+  "timelines": {},
+  "trees": {},
+  "views": [],
+  "schema": "https://microreact.org/schema/v1.json"
+}
