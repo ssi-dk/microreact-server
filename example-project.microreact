@@ -1,20 +1,4 @@
 {
-  "config": {
-        "actions": [
-            {
-                "id": "addtocluster",
-                "label": "Add selection to cluster",
-                "type": "selection",
-                "url": "https://dev2.sofi-platform.dk/cluster"
-            },
-            {
-                "id": "createnewworkspace",
-                "label": "Create new workspace from selection",
-                "type": "selection",
-                "url": "https://dev2.sofi-platform.dk/workspaces/new"
-            }
-        ]
-    },
   "charts": {},
   "datasets": {
     "dataset-1": {
